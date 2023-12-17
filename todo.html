@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="todopage.css">
+    <title>To-Do List</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Task Manager</h1>
+        <p>Organize your tasks efficiently!</p>
+    </div><br>
+    <div class="container">
+        <h1>To-Do List</h1>
+        <div id="task-form">
+            <input type="text" id="task-name" placeholder="Task Name"><br>
+            <input type="text" id="task-details" placeholder="Task Details"><br>
+            <input type="date" id="due-date"><br>
+            <button onclick="addTask()">Add Task</button>
+        </div>
+        <h2>Tasks</h2>
+        <ul id="task-list"></ul>
+        <h2>Completed Tasks</h2>
+        <ul id="completed-tasks"></ul>
+        <!-- ... (previous HTML code) ... -->
+        <h2></h2>
+        <ul id="completed-tasks"></ul>
+        <button onclick="deleteCompletedTasks()">Delete Completed Tasks</button>
+
+    </div>
+    <div class="footer">
+        <p>&copy; 2023 Task Manager. All rights reserved.</p>
+    </div>
+
+    
+
+    <script src="scriptfile.js"></script>
+    
+</body>
+</html>
